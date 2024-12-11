@@ -10,7 +10,7 @@ export default function PostPage() {
 
         <Container flex={1} margin={20}>
 
-        <Link href={""}><Text size={"35"} weight={"extraBold"}>Blog.</Text></Link>
+        <Link href={"/"}><Text size={"35"} weight={"extraBold"}>Blog.</Text></Link>
 
         <Spacer y={4} />
 
