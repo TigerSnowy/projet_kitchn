@@ -1,7 +1,21 @@
+"use client"
+
 import { Container, Text, Link, Image, Spacer, Icon, Button } from 'kitchn'
 import { Bai_Jamjuree, Flavors } from 'next/font/google';
+import { useState } from 'react';
 
 export default function PostPage() {
+
+  const [titleIsUnderline, setTitleIsUnderline] = useState<boolean>(false);
+  
+  const mouseOver = () =>{
+    setTitleIsUnderline(true);
+  }
+
+  const mouseOut = () =>{
+    setTitleIsUnderline(false);
+  }
+
   return (
     
     <Container>
@@ -10,12 +24,20 @@ export default function PostPage() {
 
         <Container flex={1} margin={20}>
 
-        <Link href={"/"}><Text size={"35"} weight={"extraBold"}>Blog.</Text></Link>
+        <Link href={"/"}>
+
+          <Text size="35" weight={"extraBold"} onMouseOver={ mouseOver } onMouseOut={ mouseOut }>
+              {
+                titleIsUnderline ? <u>Blog.</u> : <>Blog.</>
+              }  
+          </Text>
+        
+        </Link>
 
         <Spacer y={4} />
 
         <Text size={"95"} weight={"extraBold"}>Dynamic Routing and Static Generation</Text>
-
+ 
         <Spacer y={2} />
 
         <Text size="medium" weight={"extraBold"}><Icon src={"https://next-blog-starter.vercel.app/assets/blog/authors/jj.jpeg"} size={"extraTitle"} marginRight={15} />JJ Kasper</Text>

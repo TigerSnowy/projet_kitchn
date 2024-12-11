@@ -1,9 +1,21 @@
-import React from 'react';
+"use client"
+
+import React, { useState } from 'react';
 
 import { Container, Text, Link, Image, Spacer, Icon, Button } from 'kitchn'
-import { Bai_Jamjuree, Flavors } from 'next/font/google';
 
 export default function HomePage() {
+  const [titleIsUnderline, setTitleIsUnderline] = useState<boolean>(false);
+  
+  const mouseOver = () =>{
+    setTitleIsUnderline(true);
+  }
+
+  const mouseOut = () =>{
+    setTitleIsUnderline(false);
+  }
+
+
   return (
     
     <Container>
@@ -42,8 +54,19 @@ export default function HomePage() {
 
         <Container flex={3} marginLeft={20}>
 
-          <Link href={"/dynamic-routing"}><Text size="45">Dynamic Routing and Static Generation</Text></Link>
+          <Link href={"/dynamic-routing"}>
+
+            <Text size="45" onMouseOver={ mouseOver } onMouseOut={ mouseOut }>
+              {
+                titleIsUnderline ? <u>Dynamic Routing and Static Generation</u> : <>Dynamic Routing and Static Generation</>
+              }
+              
+            </Text>
+
+          </Link>
+
           <Spacer y={1} />
+
           <Text size="medium">March 16, 2020</Text>
 
         </Container>
