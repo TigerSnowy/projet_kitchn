@@ -14,11 +14,11 @@ export default function PostPage() {
 
         <Spacer y={4} />
 
-        <Text size={"95"} weight={"extraBold"}>Dynamic Routing and Static Generation</Text>
+        <Text size={"95"} weight={"extraBold"}>Preview Mode for Static Generation</Text>
 
         <Spacer y={2} />
 
-        <Text size="medium" weight={"extraBold"}><Icon src={"https://next-blog-starter.vercel.app/assets/blog/authors/jj.jpeg"} size={"extraTitle"} marginRight={15} />JJ Kasper</Text>
+        <Text size="medium" weight={"extraBold"}><Icon br="100%" src={"https://next-blog-starter.vercel.app/assets/blog/authors/joe.jpeg"} size={"extraTitle"} marginRight={15} />Joe Haddad</Text>
 
         </Container>
 
@@ -27,7 +27,7 @@ export default function PostPage() {
       <Container align={"center"} justify={"center"}>
 
         <Image
-          src={"https://next-blog-starter.vercel.app/_next/image?url=%2Fassets%2Fblog%2Fdynamic-routing%2Fcover.jpg&w=1920&q=75"}
+          src={"https://next-blog-starter.vercel.app/_next/image?url=%2Fassets%2Fblog%2Fpreview%2Fcover.jpg&w=1920&q=75"}
           alt={"white stairs"}
           width={1480}
           height={"auto"}

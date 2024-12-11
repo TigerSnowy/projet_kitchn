@@ -75,7 +75,7 @@ export default function HomePage() {
 
           <Spacer y={2} />
 
-          <Text size="30">Learn How to Pre-render Pages Using Static Generation with Next.js</Text>
+          <Link href={"/pre-render"}><Text size="30">Learn How to Pre-render Pages Using Static Generation with Next.js</Text></Link>
 
           <Spacer y={1} />
 
@@ -110,7 +110,7 @@ export default function HomePage() {
 
           <Container marginLeft={58}>
 
-            <Text size="30">Preview Mode for Static Generation</Text>
+            <Link href="/static-generation"><Text size="30">Preview Mode for Static Generation</Text></Link>
 
             <Spacer y={1} />
 
@@ -150,7 +150,7 @@ export default function HomePage() {
 
            <Spacer x={2} />
 
-            <Text weight={"bold"}><Link href={"/"}>{"View on GitHub"}</Link></Text>
+            <Text weight={"bold"}><Link href={"https://github.com/vercel/next.js/tree/canary/examples/blog-starter"}>{"View on GitHub"}</Link></Text>
 
         </Container>
 
