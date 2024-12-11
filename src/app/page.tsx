@@ -1,7 +1,9 @@
+import React from 'react';
+
 import { Container, Text, Link, Image, Spacer, Icon, Button } from 'kitchn'
 import { Bai_Jamjuree, Flavors } from 'next/font/google';
 
-export default function Homepage() {
+export default function HomePage() {
   return (
     
     <Container>
@@ -40,7 +42,7 @@ export default function Homepage() {
 
         <Container flex={3} marginLeft={20}>
 
-          <Text size="45">Dynamic Routing and Static Generation</Text>
+          <Link href={"/dynamic-routing"}><Text size="45">Dynamic Routing and Static Generation</Text></Link>
           <Spacer y={1} />
           <Text size="medium">March 16, 2020</Text>
 
@@ -158,3 +160,5 @@ export default function Homepage() {
 
   );
 }
+
+

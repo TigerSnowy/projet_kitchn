@@ -1,3 +1,4 @@
+import type React from 'react';
 import { KitchnProvider } from "kitchn";
 import { KitchnRegistry } from "kitchn/next";
 import { Inter } from "next/font/google";
@@ -8,7 +9,7 @@ import "kitchn/fonts.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Blog avec Kitchn",
+  title: "Blog - Kitchn",
   description: "Un blog créé avec Next.js et Kitchn",
 };
 
